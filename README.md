@@ -4,6 +4,6 @@ Repositorio a utilizar como archivado y registro de las tareas de Programación 
 
 01102026 - Simulador de tienda
 
-08102026 - Ejemplo de If
+08102026 - Ejemplo de If; Switch.
 
 ACS-cd
