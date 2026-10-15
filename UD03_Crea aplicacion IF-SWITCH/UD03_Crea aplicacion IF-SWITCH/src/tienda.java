@@ -20,17 +20,17 @@ importe total a pagar
 
         switch (numPase) { //Selección del pase y error con pase inválido.
             case 1:
-                System.out.print("Ha elegido el pase estándar.");
+                System.out.print("Ha elegido el pase estándar.\n");
                 precioBase = 40.00;
-                pase = " estándar";
+                pase = "estándar";
                 break;
             case 2:
-                System.out.print("Ha elegido el pase acuático.");
+                System.out.print("Ha elegido el pase acuático.\n");
                 precioBase = 55.00;
                 pase = " acuático";
                 break;
             case 3:
-                System.out.print("Ha elegido el pase VIP.");
+                System.out.print("Ha elegido el pase VIP.\n");
                 precioBase = 80.00;
                 pase = " VIP";
                 break;
@@ -45,16 +45,20 @@ importe total a pagar
             descuentoEdad = 0;
             catEdad = " bebés.";
         } else if (edad >= 4 && edad <= 12){
-            descuentoEdad = precioBase * 0.25;
+            descuentoEdad = precioBase - (precioBase * 0.25);
             catEdad = "infantil.";
         } else if (edad >=13 && edad <= 64) {
             descuentoEdad = precioBase;
             catEdad = "adulto.";
         } else if (edad >= 65 && edad < 120) {
-            descuentoEdad = precioBase *0.30;
+            descuentoEdad = precioBase - (precioBase *0.3);
             catEdad = "Senior";
         } else {
             System.out.println("Error.");
+            return;
+        }
+        if (descuentoEdad == 0) {
+            System.out.print("Entrada gratuita.\nGracias por su visita.");
             return;
         }
         System.out.println("Introduce el día de la semana (1=Lunes y 7=Domingo): ");
@@ -94,21 +98,29 @@ importe total a pagar
         }
 
         System.out.print("\n¿Es titular de carné de familia numerosa?"); //Cálculo de descuento si aplica familia numerosa.
-        System.out.print("\n1=Si  2=No");
+        System.out.print("\n1=Si  2=No\n");
         int carnet =sc.nextInt();
         if (carnet == 1) {
-            descuentoDia *= 0.15;
+            descuentoFamilia = descuentoDia - (descuentoDia * 0.15);
             familiaN = "si";
         } else if (carnet == 2) {
-            descuentoDia =descuentoDia;
+            descuentoFamilia = descuentoDia;
             familiaN = "no";
         }
         System.out.println("\nTicket");
         System.out.print("\nTipo de pase: " + pase);
-        System.out.print("\nPrecio base: " + precioBase);
+        System.out.print("\nPrecio base: " + precioBase + " €.");
         System.out.print("\nCategoría de edad aplicada: " + catEdad);
         System.out.print("\nDía de la semana: " + dia);
-        System.out.print("\nFamilia numerosa" + familiaN);
-        System.out.print("\nIMPORTE FINAL A PAGAR: " + descuentoDia + " €.");
+        System.out.print("\nFamilia numerosa: " + familiaN);
+        System.out.print("\nIMPORTE FINAL A PAGAR: " + descuentoFamilia + " €.");
+
+        //Código original arriba, el inferior a esta línea es un intento de maximizar la eficiencia y reducir el uso del print. Ambos funcionan; comprobado.
+
+        /* System.out.println("\nTicket\nTipo de pase: " + pase + "\nPrecio base: " + precioBase + " €.");
+        System.out.print("\nCategoría de edad aplicada: " + catEdad + "\nDía de la semana: " + dia);
+        System.out.print("\nFamilia numerosa: " + familiaN + "\nIMPORTE FINAL A PAGAR: " + descuentoFamilia + " €."); */
+
+        sc.close();
     }
 }
