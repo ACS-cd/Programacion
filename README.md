@@ -8,4 +8,6 @@ Repositorio a utilizar como archivado y registro de las tareas de Programación 
 
 14102026 - Ejercicios de práctica sobre lo anterior a esta línea.
 
+15102026 - Generación de un programa de tickets para un parque acuático.
+
 ACS-cd
