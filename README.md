@@ -10,4 +10,9 @@ Repositorio a utilizar como archivado y registro de las tareas de Programación 
 
 15102026 - Generación de un programa de tickets para un parque acuático.
 
+19102026 - Bloque de selección I: if y if-else;
+           Bloque switch
+           Bucles anidados y patrones (reserva)
+           Práctica integradora: el menú con FIN (repetir)
+
 ACS-cd
