@@ -14,5 +14,7 @@ Repositorio a utilizar como archivado y registro de las tareas de Programación 
            Bloque switch; 
            Bucles anidados y patrones (reserva); 
            Práctica integradora: el menú con FIN (repetir). 
+           
+26102026 - Examen, el menú con FIN.
 
 ACS-cd
