@@ -17,4 +17,8 @@ Repositorio a utilizar como archivado y registro de las tareas de Programación 
            
 26102026 - Examen, el menú con FIN.
 
+29102026 - R1, R2 y Programas rotos arreglados.
+
+31102026 - R3 Y R4 (Centinela y validación - while, switch and do-while)
+
 ACS-cd
