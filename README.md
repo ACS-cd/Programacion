@@ -21,4 +21,7 @@ Repositorio a utilizar como archivado y registro de las tareas de Programación 
 
 31102026 - R3 Y R4 (Centinela y validación - while, switch and do-while)
 
+12112026 - Boletín Array I
+15112026 - Boletin Array II
+
 ACS-cd
